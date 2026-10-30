@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulir pendaftaran relawan konservasi penyu Penyu Bahari.">
+  <title>Daftar Relawan | Penyu Bahari</title>
+</head>
+<body>
+
+  <header>
+    <h1>Penyu Bahari</h1>
+    <p>Bergabunglah menjadi relawan penjaga pantai.</p>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="spesies.html">Spesies</a></li>
+        <li><a href="relawan.html">Relawan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Pendaftaran Relawan</h2>
+      <p>
+        Isi formulir di bawah ini untuk ikut kegiatan konservasi. Kolom bertanda
+        <strong>(wajib)</strong> harus diisi.
+      </p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Data Diri</legend>
+
+          <p>
+            <label for="nama">Nama lengkap (wajib)</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Olivia" minlength="3" required>
+          </p>
+
+          <p>
+            <label for="email">Email (wajib)</label><br>
+            <input type="email" id="email" name="email" placeholder="olivia@gmail.com" required>
+          </p>
+
+          <p>
+            <label for="telepon">Nomor telepon</label><br>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+          </p>
+
+          <p>
+            <label for="usia">Usia (wajib, minimal 12 tahun)</label><br>
+            <input type="number" id="usia" name="usia" min="12" max="80" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detail Kegiatan</legend>
+
+          <p>
+            <label for="program">Program yang dipilih (wajib)</label><br>
+            <select id="program" name="program" required>
+              <option value="">-- Pilih program --</option>
+              <option value="patroli">Patroli Pantai</option>
+              <option value="pelepasan">Pelepasan Tukik</option>
+              <option value="bersih">Bersih Pantai</option>
+              <option value="edukasi">Edukasi Sekolah</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="tanggal">Tanggal kegiatan yang diinginkan (wajib)</label><br>
+            <input type="date" id="tanggal" name="tanggal" required>
+          </p>
+
+          <p>Pengalaman sebelumnya (wajib):</p>
+          <p>
+            <input type="radio" id="pengalaman-baru" name="pengalaman" value="baru" required>
+            <label for="pengalaman-baru">Belum pernah</label><br>
+            <input type="radio" id="pengalaman-pernah" name="pengalaman" value="pernah">
+            <label for="pengalaman-pernah">Pernah ikut kegiatan serupa</label><br>
+            <input type="radio" id="pengalaman-rutin" name="pengalaman" value="rutin">
+            <label for="pengalaman-rutin">Relawan rutin</label>
+          </p>
+
+          <p>Keahlian yang bisa dibantu:</p>
+          <p>
+            <input type="checkbox" id="skill-foto" name="keahlian" value="fotografi">
+            <label for="skill-foto">Fotografi dan dokumentasi</label><br>
+            <input type="checkbox" id="skill-medis" name="keahlian" value="p3k">
+            <label for="skill-medis">Pertolongan pertama</label><br>
+            <input type="checkbox" id="skill-ajar" name="keahlian" value="mengajar">
+            <label for="skill-ajar">Mengajar dan penyuluhan</label>
+          </p>
+
+          <p>
+            <label for="motivasi">Motivasi bergabung</label><br>
+            <textarea id="motivasi" name="motivasi" rows="4" cols="40" maxlength="300"
+              placeholder="Ceritakan singkat alasanmu (maksimal 300 karakter)"></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="setuju" name="setuju" required>
+          <label for="setuju">Saya bersedia mengikuti arahan koordinator lapangan (wajib)</label>
+        </p>
+
+        <p>
+          <button type="submit">Kirim Pendaftaran</button>
+          <button type="reset">Reset</button>
+        </p>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>Jadwal Kegiatan Bulan Ini</h2>
+      <table>
+        <caption>Jadwal kegiatan relawan (contoh)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Pekan</th>
+            <th scope="col">Kegiatan</th>
+            <th scope="col">Waktu</th>
+            <th scope="col">Lokasi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pekan 1</td>
+            <td>Patroli Pantai</td>
+            <td>19.00 - 23.00</td>
+            <td>Pantai peneluran</td>
+          </tr>
+          <tr>
+            <td>Pekan 2</td>
+            <td>Edukasi Sekolah</td>
+            <td>08.00 - 11.00</td>
+            <td>SD mitra</td>
+          </tr>
+          <tr>
+            <td>Pekan 3</td>
+            <td>Bersih Pantai</td>
+            <td>06.30 - 09.30</td>
+            <td>Pantai wisata</td>
+          </tr>
+          <tr>
+            <td>Pekan 4</td>
+            <td>Pelepasan Tukik</td>
+            <td>16.30 - 18.00</td>
+            <td>Area konservasi</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Kontak Koordinator</h2>
+      <address>
+        Penyu Bahari<br>
+        Email: <a href="mailto:seaturtles@gmail.com">seaturtles@gmail.com</a>
+      </address>
+      <p>Belum tahu jenis penyu apa yang kamu lindungi? Lihat <a href="spesies.html">halaman spesies</a>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <nav aria-label="Navigasi footer">
+      <a href="index.html">Beranda</a> |
+      <a href="spesies.html">Spesies</a> |
+      <a href="relawan.html">Relawan</a>
+    </nav>
+    <p><small>&copy; 2026 Penyu Bahari. Author Felikayana Yoshe Puan.</small></p>
+  </footer>
+
+</body>
+</html>
